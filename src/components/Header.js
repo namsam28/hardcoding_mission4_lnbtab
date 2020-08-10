@@ -10,7 +10,7 @@ const Header = () => {
     }, [isLnb]);
 
     return (
-        <header id="header" className={!isLnb ? "active" : ""}>
+        <header id="header" className={isLnb ? "active" : ""}>
             <button className="btn-lnb" onClick={handleLnbClick}>
                 <span></span>
                 <span></span>

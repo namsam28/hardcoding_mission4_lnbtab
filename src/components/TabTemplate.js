@@ -1,15 +1,12 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import TabMenu from "./TabMenu";
 import TabList from "./TabList";
 
 const TabTemplate = ({ tabData }) => {
     const [activeTab, setActiveTab] = useState(1);
-    const handleTabClick = useCallback(
-        (id) => {
-            setActiveTab(id);
-        },
-        [activeTab]
-    );
+    const handleTabClick = useCallback((id) => {
+        setActiveTab(id);
+    }, []);
 
     return (
         <div className="tab-wrap">

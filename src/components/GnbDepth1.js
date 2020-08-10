@@ -1,15 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const GnbDepth1 = ({ children, sitemap }) => {
     const depthLink = sitemap.path;
     const depthPageName = sitemap.pagename;
     const depth2 = sitemap.depth2;
-    console.log(!depth2);
 
     return (
-        <li className={`gnb-depth1 ${!depth2 ? "isDepth2" : ""}`}>
-            <Link to={depthLink}>{depthPageName}</Link>
+        <li className="gnb-depth1">
+            <NavLink
+                activeClassName="active"
+                to={depthLink}
+                className={depth2 ? "isDepth2" : ""}
+            >
+                {depthPageName}
+            </NavLink>
             {children}
         </li>
     );

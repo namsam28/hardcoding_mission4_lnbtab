@@ -6,7 +6,6 @@ import AboutTab from "./AboutTab";
 import "./About.scss";
 
 const About = ({ match, sitemap }) => {
-    console.log(match);
     const pageInfo = sitemap.find((pageTitle) => pageTitle.path === match.path);
     const pageTitle = pageInfo.pagename;
 
