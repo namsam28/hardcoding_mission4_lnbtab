@@ -37,4 +37,4 @@ const TabTemplate = ({ tabData }) => {
     );
 };
 
-export default TabTemplate;
+export default React.memo(TabTemplate);

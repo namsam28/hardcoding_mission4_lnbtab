@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const TabList = ({ tabContents, active }) => {
     useEffect(() => {
-        console.log("탭컨텐츠");
+        console.log("탭컨텐츠", tabContents);
     }, [tabContents, active]);
 
     return (

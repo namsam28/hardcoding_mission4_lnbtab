@@ -5,7 +5,7 @@ const TabMenu = ({ tab, active, handleClick }) => {
         handleClick(tab.id);
     };
     useEffect(() => {
-        console.log("탭메뉴");
+        console.log("탭메뉴", tab.id);
     }, [handleClick, active, tab]);
 
     return (

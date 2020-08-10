@@ -69,7 +69,7 @@ h1 + section {
         li {
             position: relative;
             display: block;
-            width: 80px;
+            width: 25%;
             background: #efefef;
             color: #000;
 
@@ -93,9 +93,14 @@ h1 + section {
 
     .tab-contents {
         display: block;
+        min-height: 300px;
+        border: 1px solid #ccc;
+        border-top: none;
 
         .tab-content {
             display: none;
+            padding: 5px;
+            box-sizing: border-box;
 
             &.active {
                 display: block;
