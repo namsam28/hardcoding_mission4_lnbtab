@@ -1,0 +1,50 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+figure {
+    margin: 0;
+}
+#contents {
+    width: 100%;
+    padding: 40px 0 40px 40vw;
+    box-sizing: border-box;
+}
+h1 + section {
+    margin-top: 20px;
+}
+
+.pageTit {
+    font-size: 24px;
+}
