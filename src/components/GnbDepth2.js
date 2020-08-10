@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const GnbDepth2 = ({ sitemap }) => {
     const depth1_path = sitemap.path;
@@ -11,9 +11,12 @@ const GnbDepth2 = ({ sitemap }) => {
                 {depth2.map((depth2) => {
                     return (
                         <li className="gnb-depth2" key={depth2.path}>
-                            <Link to={depth1_path + depth2.path}>
+                            <NavLink
+                                activeClassName="active"
+                                to={depth1_path + depth2.path}
+                            >
                                 {depth2.pagename}
-                            </Link>
+                            </NavLink>
                         </li>
                     );
                 })}

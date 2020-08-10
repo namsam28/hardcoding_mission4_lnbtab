@@ -2,7 +2,6 @@ const Sitemap = [
     {
         path: "/",
         pagename: "홈",
-        depth2: [],
     },
     {
         path: "/about",

@@ -19,4 +19,4 @@ const Gnb = ({ sitemap }) => {
     );
 };
 
-export default Gnb;
+export default React.memo(Gnb);
