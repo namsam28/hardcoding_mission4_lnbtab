@@ -29,6 +29,7 @@ const TabTemplate = ({ tabData }) => {
                             key={tab.id}
                             tabContents={tab.tabContents}
                             active={tab.id === activeTab ? true : false}
+                            childTab={tab.childTab && tab.childTab}
                         />
                     );
                 })}

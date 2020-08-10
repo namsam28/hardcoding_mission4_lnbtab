@@ -46,10 +46,18 @@ img {
 figure {
     margin: 0;
 }
-#contents {
+
+.App {
     width: 100%;
-    padding: 40px 0 40px 40vw;
+    overflow: hidden;
+}
+
+#contents {
+    position: relative;
+    width: 100%;
+    padding: 40px;
     box-sizing: border-box;
+    transition: transform 0.5s;
 }
 h1 + section {
     margin-top: 20px;

@@ -33,11 +33,16 @@
         }
     }
 }
+#header.active {
+    .btn-lnb span {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .btn-lnb span:nth-child(2) {
+        transform: rotate(135deg);
+    }
 
-#header.active .btn-lnb span {
-    top: 50%;
-    transform: rotate(45deg);
-}
-#header.active .btn-lnb span:nth-child(2) {
-    transform: rotate(135deg);
+    & ~ #contents {
+        transform: translate(50vw);
+    }
 }
